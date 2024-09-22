@@ -5,5 +5,5 @@ from . import views as v
 #creat your urls here
 
 urlpatterns = [
-    path('' ,v.vd ,name='viewtime') ,
+    path('' ,v.base ,name='viewtime') ,
 ]
