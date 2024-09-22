@@ -5,3 +5,6 @@ from django.http import HttpResponse , JsonResponse
 
 def base(request):
     return render(request, 'Piconverterapp/base.html')
+
+def home(request):
+    return render(request, 'Piconverterapp/home.html')
