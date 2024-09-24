@@ -6,5 +6,4 @@ from . import views as v
 
 urlpatterns = [
     path('' ,v.home ,name='homepage') ,
-    path('base/', v.base, name='basedir') ,
 ]

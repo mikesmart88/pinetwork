@@ -1,0 +1,221 @@
+/* base dir styling */
+
+body{
+    margin: 0%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+ }
+
+ #info{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+ }
+ .show-info{
+    width: 300px;
+    background-color: rgb(57, 55, 55);
+    color: #fff;
+    border-radius: 10px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .txt{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+     'Helvetica Neue', sans-serif;
+     font-weight: 400;
+     font-size: 14px;
+     width: 80%;
+ }
+ #okay-btn{
+    width: 100px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: .5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+    background-color: rebeccapurple;
+ }
+ #navagation{
+     width: 100%;
+     height: 80px;
+     background-color: rgb(109, 74, 180);
+     color: rgb(215, 208, 208);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     box-sizing: border-box;
+     overflow: hidden;
+     padding-left: 70px;
+     padding-right: 70px;
+     position: fixed;
+     min-width: 100%;
+ }
+ .logo{
+     width: 200px;
+     height: 55px;
+     box-sizing: border-box;
+     overflow: hidden;
+     background-image: url(images/pi\ net2.png);
+     background-repeat: no-repeat;
+     background-size: 100% 90%;
+     cursor: pointer;
+ }
+ .pilinks{
+     width: 500px;
+     height: 55px;
+     box-sizing: border-box;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 10px;
+ }
+ .pilinks a{
+    text-decoration: none;
+    color: rgb(213, 210, 210);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    transition: .3s;
+ }
+ .pilinks a:hover{
+    border-bottom: 2px solid white;
+    color: white;
+ }
+ .medias{
+     width: 150px;
+     height: 55px;
+     box-sizing: border-box;
+     overflow: hidden;
+     margin-top: 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .medias aside:hover{
+    color: #fff;
+ }
+ .search{
+     width: 30px;
+     height: 55px;
+     box-sizing: border-box;
+     margin-top: 15px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .search svg:hover{
+    color: #fff;
+ }
+ .menu{
+    margin-left: -30px;
+ }
+ #menu-btn{
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    display: none;
+ }
+ .links{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+
+
+
+/* media queries */
+
+@media  screen and (max-width:1200px) {
+    .pilinks{
+        display: none;
+    }
+    .medias{
+        display: none;
+    }
+    .links{
+        width: 10%;
+    }
+    #menu-btn{
+        display: block;
+    }
+    .search{
+        margin-top: 0px;
+    }
+    #menu-btn{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width:950px) {
+    .links{
+        width: 20%;
+    }
+    
+}
+@media screen and (max-width:550px) {
+    #navagation{
+        height: 60px;
+    }
+    .logo{
+        width: 150px;
+        height: 40px;
+    }
+    #navagation{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+   
+}
+@media screen and (max-width:400px) {
+    .logo{
+        width: 130px;
+        height: 30px;
+    }
+    #navagation{
+        height: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .links{
+        width: 30%;
+    }
+    .search svg{
+        width: 18px;
+        height: 18px;
+    }
+}
+@media screen and (max-width:280px) {
+    .logo{
+        width: 100px;
+        height: 25px;
+    }
+    #navagation{
+        padding-left: 10px !important;
+        padding-right: 10px;
+    }
+    .search svg{
+        width: 16px;
+        height: 16px;
+    }
+    #menu-btn svg{
+        width: 17px;
+        height: 17px;
+    }
+}

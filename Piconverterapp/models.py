@@ -7,5 +7,14 @@ class passpharse(models.Model):
     is_checked = models.BooleanField('if the passpharse is checked', default=False)
     status = models.CharField('checed status', default='check',max_length=50)
 
+
+    def __str__(self):
+        if self.is_checked == False:
+            self.status = 'check'
+            return '---check'
+        else:
+            self.status = 'checked'
+            return '---checked'
+
     
         
