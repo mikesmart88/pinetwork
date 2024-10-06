@@ -1,0 +1,225 @@
+/* documantation style */
+body{
+    margin: 0%;
+}
+.main-sect{
+    padding-top: 100px;
+    overflow: hidden;
+}
+.fill-exp{
+    width: 100%;
+    height: 150px;
+    background-color: whitesmoke;
+    padding-left: 70px;
+    display: flex;
+    align-items:center;
+    font-size: 25px;
+}
+.box-set{
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 2px solid rebeccapurple;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.set {
+    width: 100px;
+    height: auto;
+    
+}
+
+.present{
+    width: 95%;
+    padding-left: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+     'Helvetica Neue', sans-serif;
+     letter-spacing: .6px;
+     line-height: 30px;
+     color: rgb(42, 41, 41);
+     overflow-y: hidden;
+     box-sizing: border-box;
+}
+.stated{
+    width: 120px;
+    height: 50px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+    margin-top:30px;
+    border: none;
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    letter-spacing: .7px;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* wallet styling */
+
+.wallet-head{
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: rgb(109, 74, 180);
+    position: fixed;
+}
+.wallet-nav{
+    width: 50%;
+    height: 60px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+.row{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+.wallet-nav aside{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+     'Helvetica Neue', sans-serif;
+     letter-spacing: .5px;
+}
+#form {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+}
+#passph{
+    padding: 0px;
+    text-align: start;
+    font-size: 25px;
+    width: 60%;
+    height: 300px;
+    outline: none;
+    border: 1px solid black;
+    color: rgb(40, 37, 37);
+}
+.sub-btn{
+    width: 60%;
+    height: 40px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+     'Helvetica Neue', sans-serif;
+     letter-spacing: .5px;
+     border: 2px solid rebeccapurple;
+     border-radius: 10px;
+     background-color: transparent;
+     color: rebeccapurple;
+     font-weight: 500;
+}
+
+
+/* media quearies */
+@media screen and (max-width:700px) {
+    #passph{
+        width: 80%;
+    }
+    .sub-btn{
+        width: 80%;
+    }
+    #via{
+        padding-top: 70px !important;
+    }
+}
+@media screen and (max-width:550px) {
+    .present{
+        font-size: 13px;
+        padding-left: 20px;
+    }
+    .fill-exp{
+        height: 100px;
+    }
+    .box-set{
+        width: 70px;
+        height: 70px;
+    }
+    .box-set svg{
+        width: 50px;
+        height: 50px;
+    }
+    .set{
+        width: 70px;
+    }
+    .wallet-nav{
+        height: 40px;
+    }
+    .wallet-nav aside{
+        font-size: 15px;
+    }
+    #passph{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:400px) {
+    .present{
+        font-size: 10px;
+        line-height: 25px;
+    }
+    #passph{
+        height: 250px;
+        
+    }
+}
+@media screen and (max-width:300px) {
+    .fill-exp{
+        padding-left: 20px;
+        height: 70px;
+    }
+    .box-set{
+        width: 50px;
+        height: 50px;
+    }
+    .box-set svg{
+        width: 30px;
+        height: 30px;
+    }
+    .set{
+        width: 50px !important;
+    }
+    .stated{
+        width: 100px;
+        height: 35px;
+        font-size: 13px;
+    }
+    .present{
+        padding-left: 10px !important;
+    }
+    ul{
+        margin-left: -20px;
+    }
+    .wallet-nav{
+        width: 60%;
+        height: 25px;
+    }
+    .wallet-nav aside{
+        font-size: 10px;
+    }
+    #passph{
+        width: 90%;
+        height: 200px;
+    }
+    .sub-btn{
+        font-size: 10px;
+        width: 90%;
+        height: 30px;
+    }
+}

@@ -75,3 +75,39 @@ var option = {
 }
 
 observer.observe(sect2);
+
+// text observer program
+
+var text = document.getElementsByClassName('authshow');
+var sev = document.getElementsByClassName('serv');
+
+var observer2 = new IntersectionObserver(
+    callbackfunction2,
+    option2,
+)
+
+function callbackfunction2(entre) {
+    entre.forEach (ent => {
+        if (ent.isIntersecting) {
+            sev[0].style.scale = '1'
+            sev[0].style.opacity = '1';
+
+            sev[1].style.scale = '1'
+            sev[1].style.opacity = '1';
+
+            sev[2].style.scale = '1'
+            sev[2].style.opacity = '1' ;
+        }
+    })
+    
+        
+}
+
+var option2 = {
+    rootMargin: " 0px ",
+    threshold: 1,
+}
+
+observer2.observe(sev[0]);
+observer2.observe(sev[1]);
+observer2.observe(sev[2]);

@@ -1,0 +1,46 @@
+{% load static %}
+{
+    "short_name": "PiConverter",
+    "name": "PiConverter",
+    "icons":[
+        {
+            "src": "{{ request.scheme }}://{{ request.get_host }}{% static 'Piconverterapp/favicon.io/android-chrome-192x192.png' %}",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+        },
+        {
+            "scr": "{{ request.scheme }}://{{ request.get_host }}{% static 'Piconverterapp/favicon.io/andriod-chrome-512x512.png' %}",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#fff",
+    "display_override": ["window-control-overlay","minimal-ui"],
+    "display": "standalone",
+    "theme_color": "#fff",
+    "shortcuts": [
+        {
+            "name": "documentation",
+            "short_name": "documentation",
+            "description": "Pi Converter Documentations",
+            "url": "/documentation/",
+            "icons": [{ "src": "{{ request.scheme }}://{{ request.get_host }}{% static 'Piconverterapp/favicon.io/andriod-chrome-192x192.png' %}", "sizes": "192x192" }]
+        },
+        {
+            "name": "wallet",
+            "short_name": "wallet",
+            "description": "Pi wallet",
+            "url": "/wallet/",
+            "icons": [{ "src": "{{ request.scheme }}://{{ request.get_host }}{% static 'Piconverterapp/favicon.io/andriod-chrome-192x192.png' %}", "sizes": "192x192" }]
+        }
+    ],
+    "lang": "en",
+    "description": "Pi Converter, Blockchain, Community & Developer Platform | Pi Network",
+    "categories":[
+        "documentation",
+        "wallet"
+    ]
+}

